@@ -1,0 +1,46 @@
+# Pacmann Python Project - Cashier App
+
+Sebuah script sederhana untuk aplikasi kasir.
+
+## Latar Belakang
+Aplikasi kasir adalah aplikasi yang berfungsi untuk menginput transaksi. Pada aplikasi ini user dapat memasukkan, mengubah dan mencetak transaksi yang dilakukan.
+
+## Fitur
+Fitur-fitur yang ada pada aplikasi ini antara lain:
+
+1. Tambah item
+2. Hapus item
+3. Mengubah item
+4. Cetak transaksi
+
+## Cara Penggunaan
+
+Untuk menjalankan program ini dapat dilakukan dengan menjalankan perintah `python3 cashier.py`. Nantinya akan ada pilihan jenis operasi yang ingin dilakukan. Ketikkan nomor aksi yang diinginkan kemudian tekan enter. Setelahnya akan muncul dialog tergantung dari aksi yang dipilih.
+
+<img src="img/01.png" width="850"/>
+
+## Testing
+Untuk menjalankan test, jalankan perintah `python3 test.py`. Bila tidak ada exception yang muncul, maka berarti  fungsin-fungsi yang ada berjalan normal.
+
+<img src="img/02.png" width="850"/>
+
+## Penjelasan Singkat Bagian Kode
+
+Pada kode yang terdapat pada file `cashier.py` terdapat 2 class:
+
+1. class Transaction, merupakan class inti dimana operasi-operasi yang ada berjalan
+2. class TransactionRunner, merupakan wrapper untuk membuat dialog-dialong dengan user agar lebih interaktif
+
+Dalam penggunaannya sebagai suatu modul yang diimport pada modul lain, maka dapat menggunakan class Transaction.
+Sedangkan class TransactionRunner, bila nanti antar muka program ini berubah, menjadi web-based misalnya, maka class TransactionRunner tidak diperlukan lagi.
+
+Pada bagian bawah file `cashier.py` terdapat blok `if __name__=='__main__'` yang berguna agar ketika file cashier.py dijalankan melalui console dengan perintah `python3 cashier.py` akan membuat suatu TransactionRunner dan menjalankan fungsi run dari TransactionRunner.
+
+## Kesimpulan
+Beberapa hal yang dapat ditingkatkan dari aplikasi ini antara lain:
+
+1. Antar muka yang bersifat grafis
+2. Koneksi database
+
+
+
